@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Plugin to clear cache after mass attribute update -->
+    <type name="Magento\Catalog\Controller\Adminhtml\Product\Action\Attribute">
+        <plugin name="before-update-attributes" type="Sduif\AttributeCacheClear\Plugin\Magento\UpdateAttributes" />
+    </type>
+
+</config>
